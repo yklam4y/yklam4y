@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Here</title>
+    <link rel="icon" href="rw.png" type="image/png">
+    <style>
+
+    body {
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url("handss.png");  
+          
+    }
+
+    .login-container {        
+        box-shadow: 0 4px 20px ;
+        width: 100%;
+        max-width: 380px;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .login-container img {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        margin-bottom: 25px;
+        color: black;
+        font-size: 30px;
+    }
+
+    .input-group {
+        margin-bottom: 25px;
+        text-align: left;
+    }
+
+    .input-group label {
+        font-size: 14px;
+        color: black;
+        margin-bottom: 8px;
+        font-weight: bold;
+        display: block;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: 2px solid ;
+        border-radius: 8px;
+        box-sizing: border-box;
+  
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 15px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+ 
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="rw.png" alt="Website Logo">
+        <h2>Login to Your Account</h2>
+
+            <div class="input-group">
+                <label for="loginName">Username</label>
+                <input type="text" id="loginName" name="username" required placeholder="Enter your username">
+            </div>
+            <div class="input-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" name="password" required placeholder="Enter your password">
+            </div>
+
+            <button type="button" class="submit-btn" onclick="window.location.href='dashboard.html';">Login</button>
+       
+    </div>
+
+</body>
+</html>

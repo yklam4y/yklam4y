@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Events</title>
+	<link rel="icon" href="rw.png" type="image/png">
+	<style>
+	
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		background-image: url("hand.png");
+		font-family: 'Arial', sans-serif;
+		line-height: 50px;
+		display: flex;
+		min-height: 100vh;
+	}
+	
+	.sidebar {
+		position: fixed;
+		width: 250px;
+		height: 100%;
+		background-color: white;
+		padding-top: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.sidebar img {
+		max-height: 90px;
+		margin-bottom: 40px;
+	}
+
+	.sidebar a {
+		color: black;
+		text-decoration: none;
+		padding: 20px;
+		font-size: 20px;
+		width: 250px;
+		text-align: center;
+		border-bottom: 1px solid ;
+	}
+
+	.sidebar a:hover {
+		background-color: gray;
+	}
+
+	.main-content {
+		flex-grow: 1;
+		margin-left: 250px;
+		padding: 30px;
+	}
+
+	h1 {
+		font-size: 50px;
+		margin-bottom: 20px;
+		color: black;
+		text-align: center;
+	}
+
+	.upcoming-events h2 {
+		font-size: 30px;
+		color: black;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.event {
+		background-color: white;
+		padding: 20px;
+		border-radius: 8px;
+		margin-bottom: 20px;
+	}
+
+	.event h3 {
+		font-size: 30px;
+		color: black;
+	}
+
+	.event p {
+		font-size: 18px;
+		color: black;
+		line-height: 1.6;
+	}
+
+	.event .event-date {
+		font-size: 20px;
+		color: black;
+		font-weight: bold;
+	}
+
+	.form-container {
+		background-color: white;
+		padding: 30px;
+		border-radius: 8px;
+	}
+
+	.form-container h2 {
+		font-size: 30px;
+		margin-bottom: 20px;
+		color: black;
+		text-align: center;
+	}
+
+	.form-container form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.form-container label {
+		font-size: 19px;
+		margin-bottom: 8px;
+	}
+
+	.form-container input, .form-container select, .form-container textarea {
+		padding: 10px;
+		font-size: 20px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+		width: 100%;
+	}
+
+	.form-container button {
+		background-color: black;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 5px;
+		font-size: 19px;
+		cursor: pointer;
+	}
+
+	.form-container button:hover {
+		background-color: blue;
+	}
+
+	</style>
+</head>
+<body>
+
+
+	<div class="sidebar">
+		<img src="rw.png" alt="Logo"> <!-- Replace with your logo -->
+		<a href="index.html">Home</a>
+    	<a href="about_us.html">About Us</a>
+    	<a href="involved.html">Opportunities</a>
+    	<a href="events.html">Events</a>
+	</div>
+
+	<div class="main-content">
+
+		<div class="container">
+			<h1>Volunteering Events</h1>
+	
+			<div class="upcoming-events" id="upcoming-events">
+				<h2>Upcoming Volunteer Events</h2>
+	
+				<div class="event">
+					<h3>Community Cleanup Day</h3>
+					<p class="event-date">December 15, 2024</p>
+					<p>You can join organizations committed to keeping areas clean, or organize your own efforts with friends and neighbors. Even just picking up trash when you see it is a valuable community service.</p>
+				</div>
+	
+				<div class="event">
+					<h3>Mentor a child or teen</h3>
+					<p class="event-date">December 21, 2024</p>
+					<p>Children from all walks of life need adults who can help guide them in everything from the completion of homework to major life choices like applying to college.</p>
+				</div>
+
+				<div class="event">
+					<h3>Help the homeless</h3>
+					<p class="event-date">December 28, 2024</p>
+					<p>Homelessness is a worldwide problem. Help those in need by volunteering at shelters and soup kitchens.</p>
+				</div>
+
+				<div class="event">
+					<h3>Share your talents</h3>
+					<p class="event-date">January 5, 2025</p>
+					<p>For every skill and ability, there’s likely to be a volunteer organization that could use your talents to support their mission.</p>
+				</div>
+
+				<div class="event">
+					<h3>Help the sick</h3>
+					<p class="event-date">January 17, 2025</p>
+					<p>From hospice centers to community clinics to organizations like the Red Cross, there are a lot of groups who care for the sick and disabled.</p>
+				</div>
+
+			</div>
+
+			<div class="form-container" id="event-registration">
+				<h2>Event Registration Form</h2>
+				<p>Fill out the form below to sign up for an upcoming volunteering event. We’ll send you further details soon!</p>
+
+				<form action="#" method="POST">
+					<label for="name">Full Name</label>
+					<input type="text" id="name" name="name" required>
+
+					<label for="email">Email Address</label>
+					<input type="email" id="email" name="email" required>
+
+					<label for="event">Select an Event</label>
+					<select id="event" name="event">
+						<option value="community-cleanup">Community Cleanup Day</option>
+						<option value="food-drive">Mentor a child or teen</option>
+						<option value="fundraising-marathon">Help the homeless</option>
+						<option value="food-drive">Share your talents</option>
+						<option value="fundraising-marathon">Help the sick</option>
+					</select>	
+
+					<button type="submit">Submit Registration</button>
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+</body>
+</html>
+	

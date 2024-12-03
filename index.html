@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteering and Coordination System</title>
+    <link rel="icon" href="rw.png" type="image/png">
+    <style type="text/css">
+
+    body {
+        background-image: url("hand.png");
+        line-height: 80%;
+        font-family: 'Arial', sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        margin: 25px;
+        font-size: 20px;
+    }
+
+    header {
+        background-color: black;
+        color: white;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+    }
+
+    header img {
+        width: 100px;
+        height: auto;
+        border-radius: 40px;
+    }
+
+    header h1 {
+        font-size: 25px;
+        margin: 0;
+        padding: 10px;
+        flex-grow: 1;
+    }
+
+    header div {
+        display: flex;
+        align-items: center;
+    }
+
+    header div a {
+        margin-left: 20px;
+        font-size: 18px;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    header div a:hover {
+        color: gray;
+    }
+
+    .search-form {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-left: 1400px;
+    }
+
+    .search-form input {
+        padding: 12px 20px;
+        font-size: 16px;
+        width: 250px;
+        border-radius: 30px; 
+        background-color: white;
+        color: black;
+    }
+
+    .search-form button {
+        padding: 12px 20px;
+        font-size: 16px;
+        background-color: white; 
+        color: black;
+        border-radius: 30px; 
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    .search-form a {
+        padding: 12px 20px;
+        font-size: 16px;
+        background-color: white; 
+        color: black;
+        text-decoration: none;
+        border-radius: 30px;
+        margin-left: 10px;
+    }
+
+    .about-container {
+        max-width: 1100px;
+        margin: 100px auto 40px;
+        padding: 50px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .about-container h1 {
+        font-size: 40px;
+        margin-bottom: 50px;
+        color: black;
+        text-align: center;
+    }
+
+    .about-container p {
+        font-size: 19px;
+        line-height: 1.8;
+        color: black;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .image-gallery {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+        margin-top: 30px;
+    }
+
+    .image-gallery img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+
+    .image-gallery img.active {
+        opacity: 1;
+    }
+
+    footer {
+        background-color: transparent;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    footer .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    footer .social-links a {
+        display: block;
+    }
+
+    footer .social-links img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+
+    footer p {
+        margin-top: 20px;
+        font-size: 20px;
+        color: black;
+    }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="rw.png" alt="Website Logo">
+    <h1>Engage & Serve</h1>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="involved.html">Opportunities</a>
+        <a href="events.html">Events</a>
+    </div>
+</header>
+
+<div class="search-form">
+    <input type="text" placeholder="Search..." name="search">
+    <button type="submit">Search</button>
+    <a href="login_page.html">Log In</a> 
+</div>
+
+<div class="about-container">
+    <h1>What Is Volunteer Coordination?</h1>
+    <p>Volunteer coordinators are responsible for keeping volunteer managers and leaders informed about volunteer needs and their place in the program. They assign volunteers based on their talent, education, availability, and areas of interest. If the right talent is lacking, coordinators report the problem to volunteer managers.</p>
+
+    <p>Volunteer coordination is an important part of volunteer management that focuses on scheduling, communication, recruitment, and documentation. While in some organizations, a volunteer coordinator is also a volunteer manager, having a separate specialist for this job can improve the volunteer program.</p>
+
+    <p>Volunteer coordination is the process of organizing many aspects of volunteering. It can include recruitment, communication, scheduling, and supervision.</p>
+
+    <div class="image-gallery">
+        <img src="pic 1.jpg" alt="Community Image 1" class="slide-image active">
+        <img src="pic 3.png" alt="Community Image 2" class="slide-image">
+        <img src="pic 4.jpg" alt="Community Image 3" class="slide-image">
+        <img src="pic 5.jpg" alt="Community Image 3" class="slide-image">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+</div>
+
+<!-- Footer with social links and new paragraph -->
+<footer>
+    <div class="social-links">
+        <a href="https://www.facebook.com" target="Facebook">
+            <img src="fb.jpg" alt="Facebook">
+        </a>
+        <a href="https://www.twitter.com" target="Twitter">
+            <img src="x.jpg" alt="Twitter">
+        </a>
+        <a href="https://www.instagram.com" target="Instagram">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com" target="LinkedIn">
+            <img src="link.png" alt="LinkedIn">
+        </a>
+    </div>
+
+    <!-- New paragraph in footer -->
+    <p>Engage & Serve is dedicated to promoting volunteerism and fostering a collaborative community. We believe in the power of giving back and encourage everyone to get involved in making a difference!</p>
+</footer>
+
+<script type="text/javascript">
+    const images = document.querySelectorAll('.image-gallery img');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    let currentIndex = 0;
+
+    // Function to change the active image
+    function changeImage(index) {
+        images[currentIndex].classList.remove('active');
+        currentIndex = index;
+        if (currentIndex < 0) currentIndex = images.length - 1;
+        if (currentIndex >= images.length) currentIndex = 0;
+        images[currentIndex].classList.add('active');
+    }
+
+    // Manual navigation
+    prevButton.addEventListener('click', function() {
+        changeImage(currentIndex - 1);
+    });
+
+    nextButton.addEventListener('click', function() {
+        changeImage(currentIndex + 1);
+    });
+
+    setInterval(function() {
+        changeImage(currentIndex + 1);
+    }, 3000);
+</script>
+
+</body>
+</html>
